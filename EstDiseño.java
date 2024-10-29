@@ -49,6 +49,14 @@ public class EstDiseño {
     }
     
 
-    
-    
+    public String MostrarDis() {
+        String mensaje = "Nombre: " + nombre + "\n" +
+                "Apellido: " + apellido + "\n" +
+                "Cedula: " + cedula + "\n" +
+                "Telefono: " + telefono + "\n" +
+                "Serial: " + serial + "\n" +
+                "Cantidad Asignaturas: " + CantAsig + "\n" +
+                "Modalidad (Virtual/Presencial): " + EstVirtual + "\n";
+        return mensaje;
+    }
 }

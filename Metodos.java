@@ -27,4 +27,8 @@ public class Metodos {
         }
         return lista;
     }
+
+    //modificar prestamo del equipo (Por serial o cedula)
+    //Devolución de equipo (se elimina el registro). (Por serial o cedula)
+    //Buscar equipo (Por serial o cedula).
 }

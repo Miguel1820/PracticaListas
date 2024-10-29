@@ -48,6 +48,17 @@ public class EstIngenieria {
         PromAcum = promAcum;
     }
 
+//Datos del Estudiante de Ingenieria
+    public String DatosIng() {
+        String mensaje = "Nombre: " + nombre + "\n" +
+                "Apellido: " + apellido + "\n" +
+                "Cedula: " + cedula + "\n" +
+                "Telefono: " + telefono + "\n" +
+                "Serial: " + serial + "\n" +
+                "Semestre cursando: " + SemAct + "\n" +
+                "Promedio: " + PromAcum + "\n";
+        return mensaje;
 
+    }
     
 }

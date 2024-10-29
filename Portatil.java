@@ -28,7 +28,14 @@ public class Portatil {
     public void setPrecio(float precio) {
         this.precio = precio;
     }
+    
+//Datos del Portatil que nesecita el estudiante de ingenieria    
+    public String DatosPort() {
+        String mensaje = "Marca: " + marca + "\n" +
+                "Serial: " + serial + "\n" +
+                "Tamaño: " + tamaño + "\n" +
+                "Precio: " + precio + "\n";
+        return mensaje;
+    }
 
-    
-    
 }

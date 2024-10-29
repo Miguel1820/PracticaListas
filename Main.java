@@ -17,21 +17,29 @@ public class Main {
         while (bandera) {
             opt = (Integer.parseInt(JOptionPane.showInputDialog(mensaje)));
             switch (opt) {
-                case 1:
+                case 1: //hacer el case 1 en metodos
                     //aqui va los de ingenieria
+                    LinkedList<EstIngenieria> ListaIng = new LinkedList<>();
+                    JOptionPane.showInputDialog("Ingrese su nombre");
+                   // EstIngenieria I = new EstIngenieria(nombre, apellido, cedula, promedio, semestre);
+                   // lista.add(I);
                     break;
                 case 2:
                     //aqui va los de diseño
                     break;
                 case 3:
                     //aqui va la lista general de todos los prestamos (inventario total)
+                    //mostrar lista
                     break;
                 case 4:
-                    //salir
-                    break;
+                    JOptionPane.showMessageDialog(null, "Saliendo...", "Salida",
+                        JOptionPane.OK_CANCEL_OPTION);
+                    return;
 
                 default:
-                    // nose que hacer ahi
+                    bandera = false;
+                    JOptionPane.showMessageDialog(null, "Ha ingresado una opcion no valida.", "Dato Incorrecto",
+                        JOptionPane.ERROR_MESSAGE);
                     break;        
             }
         }
