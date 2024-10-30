@@ -61,4 +61,5 @@ public class EstIngenieria {
 
     }
     
+    //tambien hacer los case
 }

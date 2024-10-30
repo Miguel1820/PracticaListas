@@ -17,7 +17,7 @@ public class Main {
         while (bandera) {
             opt = (Integer.parseInt(JOptionPane.showInputDialog(mensaje)));
             switch (opt) {
-                case 1: //hacer el case 1 en metodos
+                case 1:
                     //aqui va los de ingenieria
                     LinkedList<EstIngenieria> ListaIng = new LinkedList<>();
                     JOptionPane.showInputDialog("Ingrese su nombre");

@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 public class Portatil {
     String marca;
     int serial;
@@ -38,4 +40,42 @@ public class Portatil {
         return mensaje;
     }
 
+//menu de que desea hacer
+    public static void main(String[] args) {
+    int opt = 0;
+    boolean bandera = true;
+    String mensaje = "Ingrese la opcion que desea ejecutar \n" +
+                "1: Registrar un Equipo \n" +
+                "2: Modificar registro \n" +
+                "3: Devolucion de Equipo \n" +
+                "4: Buscar Equipo \n" +
+                "5: Salir a menu pricipal \n";
+    while (bandera) {
+            opt = (Integer.parseInt(JOptionPane.showInputDialog(mensaje)));
+            switch (opt) {
+                case 1:
+                    
+                    break;
+                case 2:
+                    
+                    break;
+                case 3:
+                    
+                    break;
+                case 4:
+                    
+                    break;
+                case 5:
+                
+                    break;
+                default:
+                    bandera = false;
+                    JOptionPane.showMessageDialog(null, "Ha ingresado una opcion no valida.", "Dato Incorrecto",
+                        JOptionPane.ERROR_MESSAGE);
+                    break;        
+            }
+        } 
+    }    
+
 }
+

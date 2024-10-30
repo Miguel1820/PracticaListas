@@ -59,4 +59,6 @@ public class EstDiseño {
                 "Modalidad (Virtual/Presencial): " + EstVirtual + "\n";
         return mensaje;
     }
+
+    //tambien hacer los case
 }
