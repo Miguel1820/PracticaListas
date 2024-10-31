@@ -19,8 +19,7 @@ public class Main {
             switch (opt) {
                 case 1:
                     //aqui va los de ingenieria
-                    LinkedList<EstIngenieria> ListaIng = new LinkedList<>();
-                    JOptionPane.showInputDialog("Ingrese su nombre");
+                    m.RegistroEstudiantesIng();
                    // EstIngenieria I = new EstIngenieria(nombre, apellido, cedula, promedio, semestre);
                    // lista.add(I);
                     break;

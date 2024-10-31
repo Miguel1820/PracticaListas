@@ -31,15 +31,6 @@ public class Portatil {
         this.precio = precio;
     }
     
-//Datos del Portatil que nesecita el estudiante de ingenieria    
-    public String DatosPort() {
-        String mensaje = "Marca: " + marca + "\n" +
-                "Serial: " + serial + "\n" +
-                "Tamaño: " + tamaño + "\n" +
-                "Precio: " + precio + "\n";
-        return mensaje;
-    }
-
 //menu de que desea hacer
     public static void main(String[] args) {
     int opt = 0;
@@ -50,6 +41,7 @@ public class Portatil {
                 "3: Devolucion de Equipo \n" +
                 "4: Buscar Equipo \n" +
                 "5: Salir a menu pricipal \n";
+
     while (bandera) {
             opt = (Integer.parseInt(JOptionPane.showInputDialog(mensaje)));
             switch (opt) {
@@ -76,6 +68,17 @@ public class Portatil {
             }
         } 
     }    
+
+
+//Datos del Portatil que nesecita el estudiante de ingenieria    
+    public String DatosPort() {
+        String mensaje = "Marca: " + marca + "\n" +
+                "Serial: " + serial + "\n" +
+                "Tamaño: " + tamaño + "\n" +
+                "Precio: " + precio + "\n";
+        return mensaje;
+    }
+
 
 }
 

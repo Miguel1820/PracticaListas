@@ -1,9 +1,20 @@
+import javax.swing.JOptionPane;
+
 public class EstIngenieria {
     String nombre, apellido;
     double cedula, telefono, serial;
     int SemAct;
     float PromAcum;
 
+    public EstIngenieria(String nombre, String apellido, double cedula, double telefono, double serial, int semAct, float promAcum) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+        this.telefono = telefono;
+        this.serial = serial;
+        SemAct = semAct;
+        PromAcum = promAcum;
+    }
 
     public String getNombre() {
         return nombre;
@@ -47,8 +58,8 @@ public class EstIngenieria {
     public void setPromAcum(float promAcum) {
         PromAcum = promAcum;
     }
-
-//Datos del Estudiante de Ingenieria
+    
+    //Datos del Estudiante de Ingenieria
     public String DatosIng() {
         String mensaje = "Nombre: " + nombre + "\n" +
                 "Apellido: " + apellido + "\n" +
@@ -61,5 +72,4 @@ public class EstIngenieria {
 
     }
     
-    //tambien hacer los case
 }
