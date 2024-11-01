@@ -1,10 +1,21 @@
 public class EstDiseño {
     String nombre, apellido;
     double cedula, telefono;
-    int CantAsig, serial;
+    int serial, CantAsig;
     boolean EstVirtual;
 
 
+    public EstDiseño(String nombre, String apellido, double cedula, double telefono, int serial, int cantAsig,
+            boolean estVirtual) {
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.cedula = cedula;
+        this.telefono = telefono;
+        this.serial = serial;
+        CantAsig = cantAsig;
+        EstVirtual = estVirtual;
+    }
+    
     public String getNombre() {
         return nombre;
     }
@@ -48,7 +59,7 @@ public class EstDiseño {
         EstVirtual = estVirtual;
     }
     
-
+    //Datos del Estudiante de Diseño
     public String MostrarDis() {
         String mensaje = "Nombre: " + nombre + "\n" +
                 "Apellido: " + apellido + "\n" +
@@ -58,7 +69,7 @@ public class EstDiseño {
                 "Cantidad Asignaturas: " + CantAsig + "\n" +
                 "Modalidad (Virtual/Presencial): " + EstVirtual + "\n";
         return mensaje;
+
     }
 
-    //tambien hacer los case
 }

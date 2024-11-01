@@ -5,6 +5,13 @@ public class Portatil {
     int serial;
     float tamaño, precio;
 
+    
+    public Portatil(String marca, int serial, float tamaño, float precio) {
+        this.marca = marca;
+        this.serial = serial;
+        this.tamaño = tamaño;
+        this.precio = precio;
+    }
 
     public String getMarca() {
         return marca;
@@ -31,46 +38,8 @@ public class Portatil {
         this.precio = precio;
     }
     
-//menu de que desea hacer
-    public static void main(String[] args) {
-    int opt = 0;
-    boolean bandera = true;
-    String mensaje = "Ingrese la opcion que desea ejecutar \n" +
-                "1: Registrar un Equipo \n" +
-                "2: Modificar registro \n" +
-                "3: Devolucion de Equipo \n" +
-                "4: Buscar Equipo \n" +
-                "5: Salir a menu pricipal \n";
 
-    while (bandera) {
-            opt = (Integer.parseInt(JOptionPane.showInputDialog(mensaje)));
-            switch (opt) {
-                case 1:
-                    
-                    break;
-                case 2:
-                    
-                    break;
-                case 3:
-                    
-                    break;
-                case 4:
-                    
-                    break;
-                case 5:
-                
-                    break;
-                default:
-                    bandera = false;
-                    JOptionPane.showMessageDialog(null, "Ha ingresado una opcion no valida.", "Dato Incorrecto",
-                        JOptionPane.ERROR_MESSAGE);
-                    break;        
-            }
-        } 
-    }    
-
-
-//Datos del Portatil que nesecita el estudiante de ingenieria    
+    //Datos del Portatil que nesecita el estudiante de ingenieria    
     public String DatosPort() {
         String mensaje = "Marca: " + marca + "\n" +
                 "Serial: " + serial + "\n" +
@@ -79,6 +48,78 @@ public class Portatil {
         return mensaje;
     }
 
+    
+    // Método para seleccionar el sistema operativo
+    public void seleccionarSistemaOperativo() {
+        int opcSele = 0;
+        boolean bandera = true;
+        String mensaje = "Seleccione el sistema operativo:\n" +
+                "1. Windows 7\n" +
+                "2. Windows 10\n" +
+                "3. Windows 11\n";
+        while (bandera) {
+            opcSele = (Integer.parseInt(JOptionPane.showInputDialog(mensaje)));
+            while (opcSele < 1 || opcSele > 3) {
+                JOptionPane.showMessageDialog(null, "Ha ingresado una opcion no valida.", "Dato Incorrecto",
+                        JOptionPane.ERROR_MESSAGE);
+                opcSele = (Integer.parseInt(JOptionPane.showInputDialog(mensaje)));
+            }
+            switch (opcSele) {
+                case 1:
+                    JOptionPane.showMessageDialog(null, "Has seleccionado el sistema operativo: Windows 7");
+                    bandera = true;
+                    return;
+                case 2:
+                    JOptionPane.showMessageDialog(null, "Has seleccionado el sistema operativo: Windows 10");
+                    bandera = true;
+                    return;
+                case 3:
+                    JOptionPane.showMessageDialog(null, "Has seleccionado el sistema operativo: Windows 11");
+                    bandera = true;
+                    return;
+
+                default:
+                    JOptionPane.showMessageDialog(null, "Ha  ingresado una opcion no valida.", "Dato Incorrecto",
+                        JOptionPane.ERROR_MESSAGE);
+                    bandera = false;
+                    break;
+            }
+        }
+    }
+
+
+    // Método para seleccionar el procesador
+     public void seleccionarProcesador() {
+        int opcSele = 0;
+        boolean bandera = true;
+        String mensaje = "Seleccione el procesador:\n" +
+                "1. AMD Ryzen\n" +
+                "2. Intel® Core™ i5\n";
+        while (bandera) {
+            opcSele = (Integer.parseInt(JOptionPane.showInputDialog(mensaje)));
+            while (opcSele < 1 || opcSele > 2) {
+                JOptionPane.showMessageDialog(null, "Ha ingresado una opcion no valida.", "Dato Incorrecto",
+                        JOptionPane.ERROR_MESSAGE);
+                opcSele = (Integer.parseInt(JOptionPane.showInputDialog(mensaje)));
+            }
+            switch (opcSele) {
+                case 1:
+                    JOptionPane.showMessageDialog(null, "Has seleccionado el procesador: AMD Ryzen");
+                    bandera = true;
+                    return;
+                case 2:
+                    JOptionPane.showMessageDialog(null, "Has seleccionado el procesador: Intel® Core™ i5");
+                    bandera = true;
+                    return;
+
+                default:
+                    JOptionPane.showMessageDialog(null, "Ha  ingresado una opcion no valida.", "Dato Incorrecto",
+                        JOptionPane.ERROR_MESSAGE);
+                    bandera = false;
+                    break;
+            }
+        }
+    }
 
 }
 

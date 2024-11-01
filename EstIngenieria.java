@@ -1,11 +1,10 @@
-import javax.swing.JOptionPane;
-
 public class EstIngenieria {
     String nombre, apellido;
     double cedula, telefono, serial;
     int SemAct;
     float PromAcum;
 
+    
     public EstIngenieria(String nombre, String apellido, double cedula, double telefono, double serial, int semAct, float promAcum) {
         this.nombre = nombre;
         this.apellido = apellido;
